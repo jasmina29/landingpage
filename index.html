@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Fingerprint and face access control, time attendance, biometric systems and video supervision, license plate recognition, metal detectors and designing of projects smart houses.</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BioVision" />
+    <meta name="copyright" content="(C) 2014 BioVision" />
+    <meta name="date" content="2014-08-26 19:13:04 UTC" />
+    <meta name="description" content="BioVision offers biometric systems, fingerprint and face identification SDK, license plate recognition solutions, metal detectors and designing of projects smart houses." />
+    <meta name="abstract" content="BioVision offers biometric systems, fingerprint and face identification SDK, license plate recognition solutions, metal detectors and designing of projects smart houses." />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
+
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/cufon.js"></script>
+    <script type="text/javascript" src="js/fonts.js"></script>
+    <script type="text/javascript">
+        document.createElement('figure');
+        Cufon.replace('.cufon, h2, h4', { fontFamily: 'Lato', hover: true});
+        Cufon.replace('h3, .button, .button2', { fontFamily: 'Lato It', hover: true});
+        $(document).ready(function(){
+            jQuery('#mycarousel').jcarousel({
+                wrap: 'circular',
+                scroll: 1,
+                easing: 'easeInOutBack',
+                animation: 900,
+                itemVisibleOutCallback: { onBeforeAnimation: function() { Cufon.refresh(); } }
+            });
+            $('#slideshow').cycle({
+                fx: 'scrollDown',
+                timeout: 9000,
+                speed: 1000,
+                pager: '.pagination',
+                activePagerClass: 'active',
+                prev: null,
+                next: null
+            });
+            $('#testimonials').cycle({
+                fx: 'scrollDown',
+                timeout: 9000,
+                speed: 1000,
+                pager: '.pagination2',
+                activePagerClass: 'active',
+                prev: '.prev',
+                next: '.next'
+            });
+        });
+/*        $.browserLanguage = function(callback){
+            $.ajax({
+                url: "http://ajaxhttpheaders.appspot.com",
+                dataType: 'jsonp',
+                success: function(headers) {
+                    callback(headers['Accept-Language'].substring(0,2));
+                }
+            });
+        };
+        $.browserLanguage(function(language){document.title += ' ' + language;});*/
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="body1">
+            <div class="container_12">
+                <div class="header">
+                    <h1><a href="index.html" id="logo"></a></h1>
+                    <!--<ul id="menu">
+                        <li><a href="#" class="cufon">Contacts</a></li>
+                        <li><a href="#" class="cufon drop">Downloads</a>
+                            <div class="dd3 align_right" style="right: -76px;">
+                                <div class="c3">
+                                    <h2>Download List</h2>
+                                </div>
+                                <div class="c3">
+                                    <img src="images/custom/detector.png" class="img_left" alt="" />
+                                    <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Maecenas imperdiet, nibh vitae rutrum vulputate, lorem sem condimentum.<a href="#">Read more...</a></p>
+
+                                    <img src="images/custom/detector.png" class="img_left" alt="" />
+                                    <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="cufon drop">Links</a>
+                            <div class="dd3 align_right" style="right: -180px;">
+                                <div class="c3">
+                                    <h2>This is a heading title</h2>
+                                </div>
+                                <div class="c1">
+                                    <h3>Some Links</h3>
+                                    <ul>
+                                        <li><a href="#">111</a></li>
+                                        <li><a href="#">222</a></li>
+                                        <li><a href="#">333</a></li>
+                                        <li><a href="#">444</a></li>
+                                        <li><a href="#">555</a></li>
+                                    </ul>
+                                </div>
+                                <div class="c1">
+                                    <h3>Useful Links</h3>
+                                    <ul>
+                                        <li><a href="#">111</a></li>
+                                        <li><a href="#">222</a></li>
+                                        <li><a href="#">333</a></li>
+                                        <li><a href="#">444</a></li>
+                                        <li><a href="#">555</a></li>
+                                    </ul>
+                                </div>
+                                <div class="c1">
+                                    <h3>Other Stuff</h3>
+                                    <ul>
+                                        <li><a href="#">111</a></li>
+                                        <li><a href="#">222</a></li>
+                                        <li><a href="#">333</a></li>
+                                        <li><a href="#">444</a></li>
+                                        <li><a href="#">555</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="cufon drop">Solutions</a>
+                            <div class="dd5 align_right" style="right: -243px;">
+                                <div class="c5">
+                                    <h2>This is an example of a large container with 5 columns</h2>
+                                </div>
+                                <div class="c1">
+                                    <p>This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>
+                                </div>
+                                <div class="c1">
+                                    <p>Phasellus vitae sapien ac leo mollis porta quis sit amet nisi. Mauris hendrerit, metus cursus accumsan tincidunt.</p>
+                                </div>
+                                <div class="c1">
+                                    <p class="italic">This is a sample of an italic text. Consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi porta quis sit amet.</p>
+                                </div>
+                                <div class="c1">
+                                    <p>Curabitur euismod gravida ante nec commodo. Nunc dolor nulla, semper in ultricies vitae, vulputate porttitor neque.</p>
+                                </div>
+                                <div class="c1">
+                                    <p class="strong">This is a sample of a bold text. Aliquam sodales nisi nec felis hendrerit ac eleifend lectus feugiat scelerisque.</p>
+                                </div>
+                                <div class="c5">
+                                    <h2>Here is some content with side images</h2>
+                                </div>
+                                <div class="c3">
+                                    <img src="images/custom/detector.png" class="img_left" alt="" />
+                                    <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Sed in sem mauris. Aenean a commodo mi. Praesent augue lacus.<a href="#">Read more...</a></p>
+                                </div>
+                                <div class="c2">
+                                    <p>This is a black box, you can use it to highligh some content. Sed sed lacus nulla, et lacinia risus. Phasellus vitae sapien ac leo mollis porta quis sit amet nisi. Mauris hendrerit, metus cursus accumsan tincidunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="index.html" class="home"></a></li>
+                    </ul>-->
+                </div>
+                <section id="content">
+                    <div class="top"></div>
+                    <div class="wrapper">
+                        <div class="grid_12">
+                            <div class="box1">
+                                <div class="wrapper">
+                                <h2>Our Solutions</h2>
+                                <div class="pagination"></div>
+                                </div>
+                                <div id="slideshow">
+                                    <div class="wrapper">
+                                        <figure class="left marg_right">
+                                            <img src="images/gallery/bv.png" alt="BioVision SDK" class="img_slide">
+                                        </figure>
+                                        <h3>BioVision SDK</h3>
+                                        <p>Facial identification technology is intended for biometric systems developers and integrators.
+                                            The technology assures simultaneous multiple face recognition and face matching in 1-to-1 and 1-to-many
+                                            modes with high reliability and precision based on the Microsoft Windows platform.</p>
+                                        <p>It includes face matcher and extractor core, programming samples and tutorials, native support for all
+                                            webcams and extensive software documentation.</p>
+                                        <div class="right"><a href="#" class="button">Read More</a></div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <figure class="left marg_right">
+                                            <img src="images/gallery/bt.png" alt="BioTouch SDK" class="img_slide">
+                                        </figure>
+                                        <h3>BioTouch SDK</h3>
+                                        <p>This product is a fingerprint identification technology intended for biometric systems developers and integrators.
+                                            The technology assures system performance with fast, reliable fingerprint matching in 1-to-1 and 1-to-many modes
+                                            based on the Microsoft Windows platform.
+                                        <p></p>
+                                        <div class="right"><a href="#" class="button">Read More</a></div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <figure class="left marg_right">
+                                            <img src="images/gallery/bm.png" alt="BioMove SDK" class="img_slide">
+                                        </figure>
+                                        <h3>BioMove SDK</h3>
+                                        <p>Biometric SDK designed for developers and researchers in the fields of Computer Vision and Artificial Intelligence.</p>
+                                        <p>.</p>
+                                        <div class="right"><a href="#" class="button">Read More</a></div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <figure class="left marg_right">
+                                            <img src="images/gallery/mafis.png" alt="MedicalAFIS" class="img_slide">
+                                        </figure>
+                                        <h3>MedicalAFIS</h3>
+                                        <p>Biometric solution for identification and control of personal information on the state of health a patients in medical establishment.</p>
+                                        <div class="right"><a href="#" class="button">Read More</a></div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <figure class="left marg_right">
+                                            <img src="images/gallery/pafis.png" alt="ParkingAFIS" class="img_slide">
+                                        </figure>
+                                        <h3>ParkingAFIS</h3>
+                                        <p>We offer the highest quality License Plate Recognition Software Engine with an SDK for system integration companies who construct systems for their partners.</p>
+                                        <p>Based on our over a decade long experience and know-how in real life license plate recognition applications, we have developed License Plate Recognition Software Engine which is used in ParkingAFIS.</p>
+                                        <div class="right"><a href="#" class="button">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1_bot"></div>
+                            <div class="wrapper">
+                                <h3><a href="mailto:info@biovision.com.ua" class="button right" style="margin-top: 5px;">Contact us</a>Feel free If you have any question or suggestion...</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper pad_bot">
+                        <div class="grid_12">
+                        <div class="carousel">
+                            <div class="carousel-1">
+                                <ul id="mycarousel" class="jcarousel-skin-tango">
+                                    <li>
+                                        <div class="grid_3">
+                                            <div class="wrapper">
+                                                <div class="box2">
+                                                    <img src="images/custom/smarthouse.png" alt="Smart houses" class="box2_img">
+                                                    <h2 class="box2_h2">Smart houses</h2>
+                                                    <p class="pad_bot">Individual projects of smart houses based on our biometric products.</p>
+                                                    <a href="#" class="button2"><span>Read More</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="grid_3">
+                                            <div class="box2">
+                                                <img src="images/custom/timetable.png" alt="Timetable systems" class="box2_img">
+                                                <h2 class="box2_h2">Timetable systems</h2>
+                                                <p class="pad_bot">Biometric timetable systems for small and medium-size companies.</p>
+                                                <a href="#" class="button2"><span>Read More</span></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="grid_3">
+                                            <div class="box2">
+                                                <img src="images/custom/detector.png" alt="Metal detectors" class="box2_img">
+                                                <h2 class="box2_h2">Metal detectors</h2>
+                                                <p class="pad_bot">Wide range a high quality metal detectors of own manufacture.</p>
+                                                <a href="http://detector.biovision.com.ua" class="button2"><span>Read More</span></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="grid_8">
+                            <h4>About us</h4>
+
+                            <p>BioVision is a privately held Software Development company that focused on providing biometric and secure solutions.
+                                Team research activities began with biometric identification technologies, allowing the team to develop a complete set of tools
+                                and libraries to perform fully automatic human fingerprint identification and face recognition.
+                                </p>
+
+                            <p>Customer satisfaction is our first priority and we aim to produce only high quality and low cost biometrics SDK.</p>
+                        </div>
+                        <div class="grid_4">
+                            <h4>Clients Say</h4>
+                            <a href="#" class="next"></a>
+                            <a href="#" class="prev"></a>
+                            <div id="testimonials">
+                                <div class="wrapper">
+                                <div class="box3">
+                                    <div class="bg_testimonials">---<!--, <a href="#">www1</a>--></div>
+                                    <p>"---"</p>
+                                </div>
+                                </div>
+                                <div class="wrapper">
+                                <div class="box3">
+                                    <div class="bg_testimonials">---<!--, <a href="#">www2</a>--></div>
+                                    <p>"---"</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="body2">
+            <div class="container_12">
+                <footer>
+                    <div class="hide">
+                        <a href="http://www.flash-counter.com/" id="fccoml"></a>
+                    </div>
+                    <div class="inner">
+                        <div class="wrapper">
+                            <span class="privacy">
+                                <a href="#" class="logo">BioVision</a>&copy; <a href="#">Privacy Policy</a><br>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">Cufon.now();</script>
+	<!--<script type="text/javascript">-->
+		<!--var fc_id = 11037;-->
+		<!--var fc_countertyp = "sic1";-->
+		<!--var fc_language = "en";-->
+		<!--var fc_v = "2.3";-->
+		<!--var fc_protocol = ((document.location.protocol == "https:")?"https":"http");					-->
+		<!--var script = document.createElement('script');-->
+		<!--script.src = fc_protocol+'://www.flash-counter.com/scripts/counter.js';-->
+		<!--document.head.appendChild(script);-->
+	<!--</script>-->
+</body>
+</html>
